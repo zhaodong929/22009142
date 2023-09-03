@@ -17,6 +17,10 @@ public class Greeter {
   }
 
   public static void main(String[] args) {
+    if (args.length < 3) {
+      System.out.println("Usage: java Greeter <language> <country> <name>");
+      return;
+    }
     String language = args[0];
     String country = args[1];
     String name = args[2];
